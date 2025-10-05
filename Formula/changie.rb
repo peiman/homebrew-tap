@@ -11,7 +11,7 @@ class Changie < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/peiman/changie/releases/download/v0.9.2-rc2/changie_0.9.2-rc2_Darwin_x86_64.tar.gz"
-      sha256 "52d16d50a90844691d9784d11d6b7a2fc85f637bd8815c73e05037998b3a35ed"
+      sha256 "b1a1918230d64b775fc519e5d6b53fc38f616dd92f57757db220f028c8a44a07"
 
       def install
         bin.install "changie"
@@ -22,7 +22,7 @@ class Changie < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/peiman/changie/releases/download/v0.9.2-rc2/changie_0.9.2-rc2_Darwin_arm64.tar.gz"
-      sha256 "64df784b98b390a33780936975e5630d044525b0d4fdf08f2ce43198f7206878"
+      sha256 "136b146389949af6fe88bced15ee0be6fb8df2e76a2ea9bc3556b0f84bd8196e"
 
       def install
         bin.install "changie"
@@ -36,7 +36,7 @@ class Changie < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/peiman/changie/releases/download/v0.9.2-rc2/changie_0.9.2-rc2_Linux_x86_64.tar.gz"
-      sha256 "977545d8b8052e446485e902b04cce68ae76752bd4324530659656bd7f2bb8d4"
+      sha256 "8340b1515e7c69e1e4be5feb2f1aba3830f0b89e0504abe76ba5748ae924d27f"
       def install
         bin.install "changie"
 
@@ -46,7 +46,7 @@ class Changie < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/peiman/changie/releases/download/v0.9.2-rc2/changie_0.9.2-rc2_Linux_armv6.tar.gz"
-      sha256 "9c260a49db11f4c0864612b0b2680713ceae8185f3264b1f2e866f0f4acdd82f"
+      sha256 "ca75ce05b746f5d18e04a8411f2af48019580617ea32b5d9e5fe733dafb54cef"
       def install
         bin.install "changie"
 
@@ -56,7 +56,7 @@ class Changie < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/peiman/changie/releases/download/v0.9.2-rc2/changie_0.9.2-rc2_Linux_arm64.tar.gz"
-      sha256 "9f876845ebbe9d6fb1071d638ad852fa4d9824aaedd3f3754ee96b5fd9b4ddb4"
+      sha256 "cfeffdc8efb1f1de2ad6f5b9f84d141a1bbd04a25f9ddfb28504a967db590fcb"
       def install
         bin.install "changie"
 
