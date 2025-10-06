@@ -5,13 +5,13 @@
 class Changie < Formula
   desc "Professional changelog management CLI for SemVer projects"
   homepage "https://github.com/peiman/changie"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/peiman/changie/releases/download/v1.0.0/changie_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "7386f04c4c57811b9139b3d800bc2a44dca90fcb18f7f0845e565089bdd49816"
+      url "https://github.com/peiman/changie/releases/download/v1.0.1/changie_1.0.1_Darwin_x86_64.tar.gz"
+      sha256 "659cafb782573b9c90f0ec0adc202bfe08df6b56c334a3eb69d0cc530434480e"
 
       def install
         bin.install "changie"
@@ -21,8 +21,8 @@ class Changie < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/peiman/changie/releases/download/v1.0.0/changie_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "9887db8d9f3b8a1a8410756db05bec43d710a134e5edc71e11f3bb428ee69ff0"
+      url "https://github.com/peiman/changie/releases/download/v1.0.1/changie_1.0.1_Darwin_arm64.tar.gz"
+      sha256 "c5ca50104a8d7d5aa383180d1fcbc5ad9372efaec2f5f2d1219c008b3bbf88b9"
 
       def install
         bin.install "changie"
@@ -35,8 +35,8 @@ class Changie < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/peiman/changie/releases/download/v1.0.0/changie_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "8f8e87f7b02fd401cb949470a86452e60660e230c33e3886889bc48c16f9a37c"
+      url "https://github.com/peiman/changie/releases/download/v1.0.1/changie_1.0.1_Linux_x86_64.tar.gz"
+      sha256 "df276f7b714151684016c104750e4222f42d62e5021245f54f25889a88b28ebf"
       def install
         bin.install "changie"
 
@@ -45,8 +45,8 @@ class Changie < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/peiman/changie/releases/download/v1.0.0/changie_1.0.0_Linux_armv6.tar.gz"
-      sha256 "0a99ba342387b8e8155290f786b72bc9c800a731ec491b28a8051fa52e30681a"
+      url "https://github.com/peiman/changie/releases/download/v1.0.1/changie_1.0.1_Linux_armv6.tar.gz"
+      sha256 "2f274df2a81dc41d0e38935ea1009609f16239e53442529a9e1275f59a7ed1a0"
       def install
         bin.install "changie"
 
@@ -55,8 +55,8 @@ class Changie < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/peiman/changie/releases/download/v1.0.0/changie_1.0.0_Linux_arm64.tar.gz"
-      sha256 "3dd242999ba5b05019c62d8ee3d535b3cd5699497f2c617131c819eb03a4a32e"
+      url "https://github.com/peiman/changie/releases/download/v1.0.1/changie_1.0.1_Linux_arm64.tar.gz"
+      sha256 "488959ab315a580ae7f14f7286e283b38bed9b9aab713f1d649994bc95ec4751"
       def install
         bin.install "changie"
 
